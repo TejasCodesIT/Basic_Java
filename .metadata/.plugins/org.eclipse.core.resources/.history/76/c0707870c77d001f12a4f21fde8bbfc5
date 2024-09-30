@@ -1,0 +1,24 @@
+package Basicjava;
+
+public class controller {
+	
+	public static void main(String[] args) {
+		
+		Store s1 = new Store() ;
+		Store s2 = new Store() ;
+		
+		
+		
+		final int a = 5 ; 
+		
+		System.out.println(s1);
+		
+		System.out.println(s2);
+		
+		String New = "Tejas" ;
+		
+		
+		
+	}
+
+}

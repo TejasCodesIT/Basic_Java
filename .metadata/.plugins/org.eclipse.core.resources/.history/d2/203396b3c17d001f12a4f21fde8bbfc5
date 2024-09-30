@@ -1,0 +1,22 @@
+package Basicjava;
+
+public class Store {
+	
+	String productName;
+	int productId;
+	
+	public Store() {
+		
+		
+	}
+	
+	
+	public void adition() {
+		
+		
+		int a,b;
+		
+	}
+	
+
+}

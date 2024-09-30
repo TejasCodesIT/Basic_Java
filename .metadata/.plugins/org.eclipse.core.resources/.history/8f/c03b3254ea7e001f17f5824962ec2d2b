@@ -1,0 +1,13 @@
+package Basicjava;
+
+public class HelloWorld {
+	
+	public static void main(String args[]) {
+		
+		
+		DefaultValue d = new DefaultValue();
+		
+		
+	}
+
+}

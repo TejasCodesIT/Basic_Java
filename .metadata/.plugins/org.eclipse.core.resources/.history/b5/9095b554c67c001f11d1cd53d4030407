@@ -1,0 +1,6 @@
+// Define the interface
+package Basicjava
+public interface Animal {
+    void sound();  // abstract method
+    void eat();    // abstract method
+}

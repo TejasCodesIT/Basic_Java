@@ -1,0 +1,12 @@
+package Basicjava;
+
+public class HelloWorld {
+	
+	public static void main(String args[]) {
+		System.out.println("Hello");
+		
+		Bicycle b1 = new Bicycle() ;
+		b1.printStates();
+	}
+
+}

@@ -1,0 +1,7 @@
+package Basicjava;
+
+public interface Dog {
+    
+    void walk();  // Add semicolon at the end
+
+}

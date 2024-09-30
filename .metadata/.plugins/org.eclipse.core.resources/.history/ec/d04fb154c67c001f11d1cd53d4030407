@@ -1,0 +1,7 @@
+package Basicjava;
+
+public class DogImplimentation extends Dog{
+	
+	
+
+}

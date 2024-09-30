@@ -1,0 +1,22 @@
+package Basicjava;
+
+public class Store {
+	
+	String productName;
+	int productId;
+	
+	public Store() {
+		System.out.println("I am in constructor");
+		
+	}
+	
+	
+	public void adition() {
+		
+		
+		int a,b;
+		
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Basicjava.Bycycle.java&apos; to &apos;Bicycle.java&apos;&#x0D;&#x0A;- Original project: &apos;Corejava&apos;&#x0D;&#x0A;- Original element: &apos;Basicjava.Bycycle.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Basicjava.Bicycle.java&apos;" description="Rename compilation unit &apos;Bycycle.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Basicjava{Bycycle.java" name="Bicycle.java" references="false" stamp="1727432884771" version="1.0"/>
+</session>

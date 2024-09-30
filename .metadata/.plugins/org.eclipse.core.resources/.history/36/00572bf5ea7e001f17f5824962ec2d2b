@@ -1,0 +1,24 @@
+package Basicjava;
+
+public class HelloWorld {
+	
+	static {
+
+		byte b ;
+		int i ;
+		short s ;
+		float f ;
+		long l;
+		String str;
+		
+	}
+	
+	public static void main(String args[]) {
+		
+		
+		DefaultValue d = new DefaultValue();
+		
+		
+	}
+
+}
