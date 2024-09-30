@@ -3,7 +3,7 @@ package Primitive_Datatypes;
 public class Literals {
 			public static void main(String[] args) {
 				
-				
+				int c;
 				int octalNumber = 064;
 				System.out.println("Octal Number :-"+octalNumber);
 				
@@ -11,7 +11,7 @@ public class Literals {
 				System.out.println("Octal Number :-"+hexadecimal);
 				
 				int binary = 0b110100;
-				System.out.println("Octal Number :-"+binary);
+				System.out.println("Octal N umber :-"+binary);
 				
 				
 			}
