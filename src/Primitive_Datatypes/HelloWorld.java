@@ -24,7 +24,7 @@ public class HelloWorld {
 		System.out.println("Flaot:-"+f);
 		System.out.println("Long :- "+l);
 		System.out.println("String :- "+str);
-		System.out.println("Char :- "+c);
+		System.out.println("Cha r :- "+c);
 		
 		
 	}
