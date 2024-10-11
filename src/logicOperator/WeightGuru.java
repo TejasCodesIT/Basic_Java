@@ -13,17 +13,14 @@ public class WeightGuru {
 		
 		System.err.println("*******************  Welcome to Weigth Guru *************");
 		
+		System.out.println("Please Enter your");
+		
+		
 		
 		
 		System.out.println("PLease Enter your Height in meter");
 		double height = sc.nextDouble();
-		
-		
-		
-		
-		
-		
-		
+
 		System.out.println("Please enter your weight kg");
 		double weight = sc.nextDouble();
 		
