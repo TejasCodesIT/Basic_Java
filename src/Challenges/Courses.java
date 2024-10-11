@@ -1,6 +1,8 @@
 package Challenges;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Courses {
     
@@ -9,12 +11,6 @@ public class Courses {
     private int year;
     private ArrayList<Student> students;
 
-
-    public Courses() {
-        this.students = new ArrayList<>();
-    }
-
-
     public Courses(String courseName, String professorName, int year) {
         this.courseName = courseName;
         this.professorName = professorName;
@@ -22,12 +18,10 @@ public class Courses {
         this.students = new ArrayList<>();
     }
 
-
     public void enroll(Student student) {
         students.add(student);
         System.out.println("Student enrolled: " + student.getFirstName());
     }
-
 
     public void unEnroll(Student student) {
         if (students.remove(student)) {
@@ -37,23 +31,39 @@ public class Courses {
         }
     }
 
-   
-    public void unEnrollByName(String firstName) {
+    // Method to calculate the average grade of all students in the course
+    public double getGradeAvg() {
+        int sum = 0;
+        int count = students.size();
         for (Student student : students) {
-            if (student.getFirstName().equals(firstName)) {
-                students.remove(student);
-                System.out.println("Student removed: " + firstName);
-                return;
-            }
+            sum += student.getGrade();
         }
-        System.out.println("Student with name " + firstName + " not found.");
+        return count == 0 ? 0 : (double) sum / count;
     }
 
+    // Method to output a ranking of students by grade
+    public void printRanking() {
+        // Sorting students in descending order of grades
+        Collections.sort(students, Comparator.comparingInt(Student::getGrade).reversed());
+        System.out.println("Student Ranking for Course: " + courseName);
+        for (Student student : students) {
+            System.out.println(student.getFirstName() + " " + student.getLastName() + " - Grade: " + student.getGrade());
+        }
+    }
+
+    // Method to check if each student is above the course average
+    public void checkIfAboveAverage() {
+        double average = getGradeAvg();
+        System.out.println("Course average grade: " + average);
+        for (Student student : students) {
+            String result = student.getGrade() > average ? "above" : "below";
+            System.out.println(student.getFirstName() + " " + student.getLastName() + " is " + result + " average.");
+        }
+    }
 
     public void countStudents() {
         System.out.println("Total Number of Students: " + students.size());
     }
-
 
     public String getCourseName() {
         return courseName;
@@ -74,6 +84,4 @@ public class Courses {
     public int getYear() {
         return year;
     }
-
-   
 }

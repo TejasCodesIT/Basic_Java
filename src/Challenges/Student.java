@@ -7,38 +7,34 @@ public class Student {
     private int registration;
     private int grade;
     private int year;
-
-   
+    private Courses course; // Better naming than 'c1'
+    
+    
     public Student() {
-        
-    }
-
-  
-    public Student(String firstName, String lastName, int registration, int grade, int year) {
+		// TODO Auto-generated constructor stub
+	}
+   
+    // Main constructor initializing all properties
+    public Student(String firstName, String lastName, int registration, int grade, int year, Courses course) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.registration = registration;
         this.grade = grade;
         this.year = year;
+        this.course = course;
     }
 
-
+    // Overloaded constructors using this(...) chaining for code reuse
     public Student(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this(firstName, lastName, 0, 0, 0, null); // Defaults for registration, grade, and year
     }
 
     public Student(String firstName, String lastName, int registration) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.registration = registration;
+        this(firstName, lastName, registration, 0, 0, null); // Defaults for grade and year
     }
 
     public Student(String firstName, String lastName, int grade, int year) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.grade = grade;
-        this.year = year;
+        this(firstName, lastName, 0, grade, year, null); // Default registration
     }
 
     // Method to print full name
@@ -46,7 +42,7 @@ public class Student {
         System.out.println(firstName + " " + lastName);
     }
 
-    // Method to check if student is approved
+    // Method to check if student is approved	
     public boolean isApproved() {
         return grade > 60;
     }
@@ -55,7 +51,9 @@ public class Student {
     public int changeYearIfApproved() {
         if (grade >= 60) {
             year++;
-            System.out.println("Congratulations");
+            System.out.println("Congratulations, you have been promoted to year " + year);
+        } else {
+            System.out.println("You have not been promoted.");
         }
         return year;
     }
@@ -66,6 +64,9 @@ public class Student {
         System.out.println("Grade: " + grade);
         System.out.println("Registration: " + registration);
         System.out.println("Year: " + year);
+        if (course != null) {
+            System.out.println("Course: " + course.getCourseName());
+        }
     }
 
     // Getters and setters
@@ -107,5 +108,13 @@ public class Student {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public Courses getCourse() {
+        return course;
+    }
+
+    public void setCourse(Courses course) {
+        this.course = course;
     }
 }
