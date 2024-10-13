@@ -11,7 +11,7 @@ public class Dao {
 		
 		
 		double BMI = weight/(height*height);
-		System.out.println(BMI);
+		//System.out.println(BMI);
 		
 		if(BMI<18 && BMI>0) {
 			return "underweight";
