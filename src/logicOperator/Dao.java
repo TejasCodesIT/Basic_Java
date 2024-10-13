@@ -6,7 +6,7 @@ public class Dao {
 	
 
 	
-	public static String calculateBMI(double height,double weight) {
+	public  String calculateBMI(double height,double weight) {
 		// TODO Auto-generated method stub
 		
 		
