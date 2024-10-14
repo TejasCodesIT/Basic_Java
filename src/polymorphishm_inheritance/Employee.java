@@ -14,6 +14,19 @@ public class Employee {
 	private double salary;
 	private int yearWorked;
 	
+	private String username="hello";
+	private String password;
+	
+	
+	
+	
+	
+		
+		
+		
+		
+	
+	
 	
     
 	
@@ -28,6 +41,7 @@ public class Employee {
 		this.vacationDaysTaken = vacationDaysTaken;
 		this.salary = salary;
 		this.yearWorked = yearWorked;
+		
 	}
 	void timeToRetirement() {
 		
