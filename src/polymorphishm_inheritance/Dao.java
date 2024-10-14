@@ -2,6 +2,17 @@ package polymorphishm_inheritance;
 
 public class Dao implements User{
 	
+	private String username = "empusername";
+	private  String password = "1234";
+	
+
+
+	public Dao(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
 
 
 	public void login(String user,String pass) {
@@ -35,5 +46,23 @@ public class Dao implements User{
 		else System.out.println("Please enter valid input");
 
 }
+	
+	
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	
 }

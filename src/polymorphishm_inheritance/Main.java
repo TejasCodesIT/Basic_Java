@@ -9,7 +9,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 	
 		
-		Dao  dao = new Dao();
+		Dao  dao = new Dao("empusername","1234");
 		dao.login("empusername", "1234");
 		
 									

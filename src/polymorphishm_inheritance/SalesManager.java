@@ -15,7 +15,7 @@ public class SalesManager extends SalesRep{
 		super(firstName, lastName, registration, age, daysWorked, vacationDaysTaken, salary, yearWorked, salesMade);
 		// TODO Auto-generated constructor stub
 		
-		this.commisionByTeam =commisionByTeam;
+		this.commisionByTeam = commisionByTeam;
 		
 		
 	
