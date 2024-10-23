@@ -1,19 +1,21 @@
 package ControlFlow;
 
+import java.util.jar.Attributes.Name;
+
 public class StaticController {
+			
+	 int a  = 5;
+	
 	
 	
 	public static void main(String[] args) {
 		
-		
-		StaticVariable s1 = new StaticVariable("COEP","Suraj");
-		
-		System.out.println(s1.collegeName);
-		
-		StaticVariable s2 = new StaticVariable();
-		
-		System.out.println(s2.collegeName);
-		
+		System.out.println("From main method");
+		System.out.println();
+		StaticVariable staticVariable = new StaticVariable();
+		System.out.println(staticVariable.studentName);
 	}
+	
+	
 
 }
