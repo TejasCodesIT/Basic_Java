@@ -75,12 +75,8 @@ public class SerializaionStudents {
 
       }
 
- 
 
       try{
-
-       
-
         ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("input.txt"));
 
         Student temp = (Student)objectInputStream.readObject();
